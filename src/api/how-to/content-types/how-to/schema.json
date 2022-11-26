@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "how_tos",
+  "info": {
+    "singularName": "how-to",
+    "pluralName": "how-tos",
+    "displayName": "How to",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "places": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::place.place"
+    }
+  }
+}
