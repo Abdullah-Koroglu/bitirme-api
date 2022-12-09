@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "place_groups",
+  "info": {
+    "singularName": "place-group",
+    "pluralName": "place-groups",
+    "displayName": "Place-group"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

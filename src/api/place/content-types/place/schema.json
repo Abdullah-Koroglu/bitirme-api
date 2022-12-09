@@ -4,7 +4,8 @@
   "info": {
     "singularName": "place",
     "pluralName": "places",
-    "displayName": "Place"
+    "displayName": "Place",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,20 +19,36 @@
       "type": "richtext"
     },
     "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "isOpen": {
       "type": "boolean"
     },
     "location": {
       "type": "string"
+    },
+    "parentId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::place.place"
+    },
+    "placeGroup": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::place-group.place-group"
+    },
+    "contact": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact.contact"
     }
   }
 }
