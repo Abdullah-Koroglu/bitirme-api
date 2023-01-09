@@ -4,10 +4,11 @@
   "info": {
     "singularName": "report",
     "pluralName": "reports",
-    "displayName": "report"
+    "displayName": "report",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

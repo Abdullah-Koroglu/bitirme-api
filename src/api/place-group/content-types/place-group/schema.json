@@ -4,10 +4,11 @@
   "info": {
     "singularName": "place-group",
     "pluralName": "place-groups",
-    "displayName": "Place-group"
+    "displayName": "Place-group",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
